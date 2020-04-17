@@ -11,3 +11,6 @@ build:
 
 # a toi de remplir run
 run: 
+
+clean:
+	rm -rf OS-docker-TP-Scala
