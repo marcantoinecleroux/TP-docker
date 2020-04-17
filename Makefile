@@ -1,13 +1,13 @@
 repo=https://github.com/Velythyl/OS-docker-TP-Scala.git
-
+image_tag=my_tag
 
 all: clone 
 
 clone:
 	git clone $(repo)
 
-# a toi de remplir build
 build:
+	docker build  . -t $(image_tag)
 
 # a toi de remplir run
 run: 
