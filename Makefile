@@ -11,7 +11,8 @@ build:
 
 # a toi de remplir run
 run: 
-	docker run --rm -it -v $(PWD):/projects -w /pdfs dockerImage bash
+	docker run --rm -it -v $(PWD):/pdfs -w /pdfs dockerImage bash
+	#docker run --rm --name $(CONTAINER_NAME)-$(CONTAINER_INSTANCE) $(PORTS) $(VOLUMES) $(ENV) $(NS)/$(IMAGE_NAME):$(VERSION)
 
 clean:
 	rm -rf OS-docker-TP-Scala
