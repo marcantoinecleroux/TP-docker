@@ -25,3 +25,4 @@ WORKDIR /root
 COPY ./OS-docker-TP-Scala go
 
 CMD [" sbt", " --error run"]
+

@@ -11,9 +11,10 @@ build:
 
 # a toi de remplir run
 run: 
-	#docker run --rm -it -v $(PWD):/app -w /pdfs dockerImage bash
-	docker run --mount type=bind,source="$(PWD)/pdfs",target=/pdfs dockerImage --name="$(image_tag)" $(image_tag)
-	#docker run --rm --name $(CONTAINER_NAME)-$(CONTAINER_INSTANCE) $(PORTS) $(VOLUMES) $(ENV) $(NS)/$(IMAGE_NAME):$(VERSION)
+	#essai
+	#docker run --mount type=bind,source="$(PWD)/pdfs",target=/pdfs dockerImage --name="$(image_tag)" $(image_tag)
+	#essai from scratch perso
+	docker run $(image_tag)
 
 clean:
 	rm -rf OS-docker-TP-Scala
